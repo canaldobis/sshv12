@@ -81,14 +81,14 @@ main {
     border-top-right-radius: 10px;
 }
 
-/* Estilo para o nome do conteúdo */
+/* Estilo para o nome do conteúdo (nome do canal) */
 .grid-item h3 {
-    margin: 10px 0;
-    font-size: 16px;
-    color: #333;
-    font-weight: bold; /* Texto em negrito */
-    background-color: #fff; /* Fundo branco */
-    padding: 5px; /* Espaçamento interno */
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #fff;
+    text-align: center;
+    
 }
 
 .footer-text {
