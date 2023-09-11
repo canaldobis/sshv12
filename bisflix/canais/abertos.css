@@ -88,6 +88,10 @@ main {
     position: absolute;
     bottom: 0;
     width: 100%;
+    font-size: 14px; /* Tamanho do texto ajustado às caixas */
+    white-space: nowrap; /* Evita que o texto quebre para a próxima linha */
+    overflow: hidden; /* Esconde qualquer parte do texto que não caiba na caixa */
+    text-overflow: ellipsis; /* Adiciona reticências (...) quando o texto é muito longo */
 }
 
 .footer-text {
@@ -95,4 +99,4 @@ main {
     padding: 1rem 0;
     background-color: #201d3d6b;
     color: #b0a8ffff;
-        }
+    }
