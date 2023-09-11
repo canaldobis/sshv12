@@ -23,26 +23,26 @@ header {
     font-family: Roboto;
 }
 
-/* Estilo para o slogan abaixo do logotipo */
-.logo {
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-}
-.logo img {
-    width: 270px; /* Largura da imagem */
-    height: 70px; /* Altura da imagem */
-    display: block; /* Faz a imagem ocupar toda a largura do contêiner */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
-}
-/* Estilo para o slogan abaixo do logotipo */
-.slogan {
-    text-align: center; /* Centraliza o texto horizontalmente */
-    margin-top: 10px; /* Espaçamento superior */
-    color: #b0a8ffff; /* Cor do texto */
-    font-size: 18px; /* Tamanho da fonte */
-    line-height: 1.5; /* Espaçamento entre linhas */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-  
+.logo img {
+    width: 284px;
+    height: 60px;
+}
+
+.slogan {
+    margin-top: 20px;
+    color: #b0a8ffff;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}
+
 main {
     flex-direction: column;
     display: flex;
@@ -52,7 +52,6 @@ main {
     padding: 2rem;
 }
 
-/* Estilo para as categorias */
 .card {
     border: 1px solid #ccc;
     padding: 20px;
@@ -61,19 +60,6 @@ main {
     background-color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: calc(50% - 40px); /* Largura de 50% com margens à esquerda e à direita */
-    display: inline-block; /* Coloca as caixas em linha */
-    vertical-align: top; /* Alinha as caixas superiormente */
-}
-
-/* Adicione classes específicas para cada categoria */
-.canais-card,
-.filmes-card,
-.series-card,
-.radios-card {
-    width: calc(50% - 40px); /* Largura de 50% com margens à esquerda e à direita */
-    display: inline-block; /* Coloca as caixas em linha */
-    vertical-align: top; /* Alinha as caixas superiormente */
 }
 
 h2 {
@@ -86,7 +72,6 @@ p {
     margin-top: 10px;
 }
 
-/* Estilo para os botões */
 button.open-menu {
     background-color: #252147;
     color: #fff;
@@ -98,7 +83,6 @@ button.open-menu {
     font-size: 1rem;
 }
 
-/* Estilo para os menus */
 .menu {
     display: none;
     background-color: #fff;
@@ -122,7 +106,6 @@ a {
     font-size: 1rem;
 }
 
-/* Estilo para os links no hover */
 a:hover {
     color: #ff5733;
 }
@@ -133,5 +116,3 @@ a:hover {
     background-color: #201d3d6b;
     color: #b0a8ffff;
 }
-
-
