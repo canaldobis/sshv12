@@ -6,9 +6,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #14142c;
-    
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
 }
 
 header {
@@ -16,11 +17,11 @@ header {
     color: #b0a8ffff;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Coloca o logo e o slogan um abaixo do outro */
     align-items: center;
-    padding-right: 10px;
     font-size: 1rem;
     font-family: Roboto;
+    width: 100%;
 }
 
 .header-content {
