@@ -23,17 +23,20 @@ header {
     font-family: Roboto;
 }
 
+/* Estilo para o slogan abaixo do logotipo */
 .logo {
     text-align: center; /* Centraliza o conteúdo horizontalmente */
 }
 .logo img {
-    width: 284px; /* Largura da imagem */
-    height: 60px; /* Altura da imagem */
+    width: 270px; /* Largura da imagem */
+    height: 70px; /* Altura da imagem */
+    display: block; /* Faz a imagem ocupar toda a largura do contêiner */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
 }
-/* Estilo para o slogan */
+/* Estilo para o slogan abaixo do logotipo */
 .slogan {
     text-align: center; /* Centraliza o texto horizontalmente */
-    margin-top: 20px; /* Espaçamento superior */
+    margin-top: 10px; /* Espaçamento superior */
     color: #b0a8ffff; /* Cor do texto */
     font-size: 18px; /* Tamanho da fonte */
     line-height: 1.5; /* Espaçamento entre linhas */
