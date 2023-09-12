@@ -27,10 +27,10 @@ header {
 .logo img {
     width: 284px;
     height: 60px;
+    margin-top: 50px; /* Espaço entre o logo e a barra de título */
 }
 
 .slogan {
-    margin-top: 20px;
     color: #b0a8ffff;
     font-size: 18px;
     line-height: 1.5;
@@ -104,12 +104,12 @@ main {
 #voltarButton,
 #proximaButton {
     position: absolute;
-    top: 50px;
-    width: 50%;
+    top: 10px; /* Espaço entre os botões e a barra de título */
+    width: 45%; /* Reduzi o tamanho dos botões */
     background-color: transparent;
     border: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 24px; /* Aumentei o tamanho do texto */
     text-align: center;
     cursor: pointer;
     outline: none;
@@ -131,16 +131,16 @@ main {
 }
 
 /* Ícones */
-#voltarButton::before {
-    content: "\2190"; /* Código da seta para a esquerda */
+#voltarButton::before,
+#proximaButton::after {
     font-family: 'bi'; /* Use a biblioteca de ícones desejada (bi no exemplo) */
     font-weight: 900;
-    margin-right: 5px; /* Espaço entre o ícone e o texto */
 }
 
-#proximaButton::after {
-    content: "\2192"; /* Código da seta para a direita */
-    font-family: 'bi'; /* Use a biblioteca de ícones desejada (bi no exemplo) */
-    font-weight: 900;
-    margin-left: 5px; /* Espaço entre o ícone e o texto */
+#voltarButton::before {
+    content: "\2190\00a0\00a0\00a0Voltar"; /* Setas e texto VOLTAR */
+    margin-right: 5px; /* Espaço entre o ícone e o texto */ 
+    }
+#proximaButton::after { content: "Próxima\00a0\00a0\00a0\2192"; /* Texto PRÓXIMA e setas */ margin-left: 5px; /*Espaço entre o texto e as setas */
+
     }
