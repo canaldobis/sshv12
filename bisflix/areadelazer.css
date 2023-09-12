@@ -8,8 +8,8 @@ body {
     background-color: #14142c;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -17,18 +17,11 @@ header {
     color: #b0a8ffff;
     padding: 10px;
     display: flex;
-    flex-direction: column; /* Coloca o logo e o slogan um abaixo do outro */
+    flex-direction: column;
     align-items: center;
     font-size: 1rem;
     font-family: Roboto;
     width: 100%;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 .logo img {
@@ -42,6 +35,7 @@ header {
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
+    max-width: 98%;
 }
 
 main {
