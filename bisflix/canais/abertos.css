@@ -68,8 +68,8 @@ main {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     position: relative;
-    width: 150px; /* Largura fixa das caixas de pôster */
-    height: 225px; /* Altura fixa das caixas de pôster */
+    width: 180px; /* Largura fixa das caixas de pôster */
+    height: 270px; /* Altura fixa das caixas de pôster */
     overflow: hidden; /* Evita que as imagens se sobreponham às caixas */
 }
 
@@ -109,7 +109,7 @@ main {
 #voltarButton,
 #proximaButton {
     position: absolute;
-    top: 10px; /* Espaço entre os botões e a barra de título */
+    top: 0px; /* Espaço entre os botões e a barra de título */
     width: 45%; /* Reduzi o tamanho dos botões */
     background-color: transparent;
     border: none;
@@ -122,7 +122,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px; /* Altura dos botões */
+    height: 25px; /* Altura dos botões */
+    white-space: nowrap; /* Evita que o texto quebre para a próxima linha */
+    overflow: hidden; /* Esconde qualquer parte do texto que não caiba na caixa */
+    text-overflow: ellipsis; /* Adiciona reticências (...) quando o texto é muito longo */
 }
 
 #voltarButton {
