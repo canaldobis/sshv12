@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EQUIPE BIS - CANAIS ABERTOS</title>
     <link rel="stylesheet" href="abertos.css">
-    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link rel="stylesheet" href="popup.css">
 </head>
 
 <body>
@@ -15,18 +15,18 @@
             <img src="../img/logo_bisflix.png" alt="Logo BISFLIX">
         </div>
         <div class="slogan">
-            <p>Lembre-se que devido a limita??es, n?o podemos adicionar todo o conteúdo que gostaríamos, mas desfrute dessa cortesia que conseguimos com muito carinho.</p>
+            <p>Lembre-se que devido a limitações, não podemos adicionar todo o conteúdo que gostaríamos, mas desfrute dessa cortesia que conseguimos com muito carinho.</p>
         </div>
     </header>
     <div class="popup-container" id="myPopup">
-        <button class="popup-close-button" id="popupCloseButton">Fechar</button>
-        <div class="popup-window">
-            <h2 class="popup-title"></h2>
-            <div class="video-player">
-                <iframe frameborder="0" allowfullscreen></iframe>
-            </div>
+    <button class="popup-close-button" id="popupCloseButton">Fechar</button>
+    <div class="popup-window">
+        <h2 class="popup-title"></h2>
+        <div class="video-player">
+            <iframe frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
+</div>
     <main class="grid-container">
         <!-- Primeiro poster -->
         <div class="grid-item" data-src="http://xx.tigeruhd.xyz:80/live/miragem27/anateltv27/1784448.m3u8" data-title="Rede-TV-HD">
@@ -65,8 +65,9 @@
         </div>
         <!-- Sexto poster -->
         <div class="grid-item" data-src="http://xx.tigeruhd.xyz:80/live/miragem27/anateltv27/1605216.m3u8" data-title="SBT-SP-HD">
-            <a href="#" class="popup-link">
-                <img src="http://tv.deflextelecom.com.br/imagensiptv/sbt.br.png" alt="SBT SP HD</h3>
+        <a href="#" class="popup-link">
+                <img src="http://tv.deflextelecom.com.br/imagensiptv/sbt.br.png" alt="SBT SP HD>
+                <h3>SBT SP HD</h3>
             </a>
         </div>
         <!-- Sétimo poster-->
@@ -88,26 +89,19 @@
         <!-- Nono poster -->
         <div class="grid-item" data-src="http://xx.tigeruhd.xyz:80/live/miragem27/anateltv27/1876404.m3u8" data-title="BAND-HD">  
         <a href="#" class="popup-link">
-                <img src="http://www.rochagalaxia.live/logos/bandlogo480.png" alt="BAND HD<">         
+                <img src="http://www.rochagalaxia.live/logos/bandlogo480.png" alt="BAND HD">         
                  <h3>BAND HD</h3> 
+               </a>
+        </div>
                  
         <!-- Repita esta estrutura para quantos posteres desejar exibir -->
         
 </main>
     <footer>
         <p class="footer-text">AT.TE:<br>
-            <b><a href="https://telegram.me/equipebis">??????? ????</a></b> &copy; 2015-2023 <b>CONECTANDO VOC? AO MUNDO! - Todos os direitos Reservados.</b>
+            <b><a href="https://telegram.me/equipebis">⇲𝐄𝐐𝐔𝐈𝐏𝐄 𝐁𝐈𝐒⇱</a></b> &copy; 2015-2023 <b>CONECTANDO VOCÊ AO MUNDO! - Todos os direitos Reservados.</b>
         </p>
     </footer>
-    <div class="popup-container" id="myPopup">
-        <div class="popup-window">
-            <span class="popup-close-button" id="popupCloseButton">×</span>
-            <div class="popup-title" id="popupTitle"></div>
-            <div class="video-player" id="videoPlayer">
-                <!-- O vídeo será inserido aqui dinamicamente -->
-            </div>
-        </div>
-    </div>
     <script src="popup.js"></script>
 </body>
 </html>
