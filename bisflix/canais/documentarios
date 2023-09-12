@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EQUIPE BIS - CANAIS ABERTOS</title>
+    <link rel="stylesheet" href="abertos.css">
+</head>
+
+<body>
+    <!-- Barra de Título -->
+    <header>
+        <div class="buttons">
+            <!-- Botões Voltar e Próxima -->
+            <button id="voltarButton">Voltar</button>
+            <button id="proximaButton">Próxima</button>
+        </div>
+        <div class="logo">
+            <img src="../img/logo_bisflix.png" alt="Logo BISFLIX">
+        </div>
+        <div class="slogan">
+            <p>Lembre-se que devido a limitações, não podemos adicionar todo o conteúdo que gostaríamos, mas desfrute dessa cortesia que conseguimos com muito carinho.</p>
+        </div>
+    </header>
+
+    <main class="grid-container">
+        <!-- Primeiro poster -->
+        <div class="grid-item">  
+        <a href="http://joao-1-us.mainbkonline.shop:80/live/2878926985/0749027113/3.m3u8"
+            data-title="ANIMAL-PLANET-HD">
+            <img src="http://ccdnblck.xyz:80/images/db8356a775d53e2a5d251cd48acaf23c.png" alt="ANIMAL PLANET HD">
+            <h3>ANIMAL PLANET HD</h3>
+        </div>
+        <!-- Segundo poster -->
+        <div class="grid-item">  
+        <a href="http://joao-1-us.mainbkonline.shop:80/live/2878926985/0749027113/45.m3u8"
+            data-title="HISTORY-HD">
+            <img src="https://i.ibb.co/5Fd0g5y/Logotipo-da-TV-Brasil.png" alt="HISTORY HD">
+            <h3>HISTORY HD</h3>
+        </div>
+        <!-- Terceiro poster -->
+        <div class="grid-item">  
+        <a href="http://joao-1-us.mainbkonline.shop:80/live/2878926985/0749027113/44.m3u8"
+            data-title="HISTORY-2-HD">
+            <img src="https://imgur.com/8oMEs6u.png" alt="HISTORY 2 HD">
+            <h3>HISTORY 2 HD</h3>
+        </div>
+        <!-- Quarto poster -->
+        <div class="grid-item">  
+        <a href="http://joao-1-us.mainbkonline.shop:80/live/2878926985/0749027113/54.m3u8"
+            data-title="NATGEO-HD">
+            <img src="https://imgur.com/acAruWG.png" alt="NATGEO HD">
+            <h3>NATGEO HD</h3>
+        </div>
+        <!-- Quinto poster -->
+        <div class="grid-item">  
+        <a href="http://joao-1-us.mainbkonline.shop:80/live/2878926985/0749027113/12.m3u8"
+            data-title="DISCOVERY-CHANNEL-HD">
+            <img src="https://imgur.com/W26d4Fq.png" alt="DISCOVERY CHANNEL HD">
+            <h3>DISCOVERY CHANNEL HD</h3>
+        </div>
+        <!-- Sexto poster -->
+        <div class="grid-item">  
+        <a href="http://joao-1-us.mainbkonline.shop:80/live/2878926985/0749027113/16.m3u8"
+            data-title="DISCOVERY-SCIENCE-HD">
+            <img src="https://imgur.com/5db7nmT.png" alt="DISCOVERY SCIENCE HD">
+            <h3>DISCOVERY SCIENCE HD</h3>
+        </div>
+        <!-- Sétimo poster -->
+        <div class="grid-item">  
+        <a href="http://joao-1-us.mainbkonline.shop:80/live/2878926985/0749027113/18.m3u8"
+            data-title="DISCOVERY-TURBO-HD">
+            <img src="https://imgur.com/tYWcfMx.png" alt="DISCOVERY TURBO HD">
+            <h3>DISCOVERY TURBO HD</h3>
+        </div>
+        <!-- Oitavo poster -->
+        <div class="grid-item">  
+        <a href="http://joao-1-us.mainbkonline.shop:80/live/2878926985/0749027113/19.m3u8"
+            data-title="DISCOVERY-WORLD-HD">
+            <img src="https://imgur.com/w37PObs.png">
+            <h3>DISCOVERY WORLD HD</h3>
+        </div>
+        <!-- Nono poster -->
+        <div class="grid-item">                          <a href="http://joao-1-us.mainbkonline.shop:80/live/2878926985/0749027113/76679.m3u8"
+            data-title="INVESTIGAÇAO-DISCOVERY-HD">
+            <img src="https://i.ibb.co/S5DRd2X/logoband.png" alt="INVESTIGAÇAO DISCOVERY HD">
+            <h3>INVESTIGAÇAO DISCOVERY HD</h3>
+        </div>
+        <!-- Repita esta estrutura para quantos posteres desejar exibir -->
+    </main>
+
+    <script>
+        // Verifica se há um vídeo aberto (simulando uma variável booleana)
+        let videoAberto = false;
+
+        // Obtém referências aos botões "Voltar" e "Próxima"
+        const voltarButton = document.getElementById("voltarButton");
+        const proximaButton = document.getElementById("proximaButton");
+
+        // Define o comportamento do botão "Voltar" com base no estado do vídeo
+        voltarButton.addEventListener("click", function() {
+            if (videoAberto) {
+                // Se há um vídeo aberto, faça o que desejar, como fechar o vídeo.
+                alert("Fechar vídeo");
+                videoAberto = false;
+            } else {
+                // Se não há vídeo aberto, você pode redirecionar para "areadelazer.html"
+                DtStartWebViewActivity.execute("../areadelazer.html");
+            }
+        });
+
+        // Define o comportamento do botão "Próxima" com base no estado do vídeo
+        proximaButton.addEventListener("click", function() {
+            if (videoAberto) {
+                // Se há um vídeo aberto, faça o que desejar, como ir para a próxima página.
+                alert("Ir para a próxima página");
+            }
+        });
+    </script>
+    <footer>
+        <p class="footer-text">AT.TE:<br>
+            <b><a href="https://telegram.me/equipebis">⇲𝐄𝐐𝐔𝐈𝐏𝐄 𝐁𝐈𝐒⇱</a></b> &copy; 2015-2023 <b>CONECTANDO VOCÊ AO MUNDO! - Todos os direitos Reservados.</b>
+        </p>
+    </footer>
+</body>
+
+</html>
