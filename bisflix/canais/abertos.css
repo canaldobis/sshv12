@@ -24,6 +24,11 @@ header {
     width: 100%;
 }
 
+.logo {
+    width: 100%;
+    text-align: center;
+}
+
 .logo img {
     width: 284px;
     height: 60px;
@@ -130,17 +135,15 @@ main {
     background-color: blue; /* Cor azul para o botão PRÓXIMA */
 }
 
-/* Ícones */
-#voltarButton::before,
-#proximaButton::after {
+/* Ícones para os botões */
+#voltarButton::before {
+    content: "\2190"; /* Código da seta para a esquerda */
     font-family: 'bi'; /* Use a biblioteca de ícones desejada (bi no exemplo) */
     font-weight: 900;
 }
 
-#voltarButton::before {
-    content: "\2190\00a0\00a0\00a0Voltar"; /* Setas e texto VOLTAR */
-    margin-right: 5px; /* Espaço entre o ícone e o texto */ 
-    }
-#proximaButton::after { content: "Próxima\00a0\00a0\00a0\2192"; /* Texto PRÓXIMA e setas */ margin-left: 5px; /*Espaço entre o texto e as setas */
-
-    }
+#proximaButton::after {
+    content: "\2192"; /* Código da seta para a direita */
+    font-family: 'bi'; /* Use a biblioteca de ícones desejada (bi no exemplo) */
+    font-weight: 900;
+}
