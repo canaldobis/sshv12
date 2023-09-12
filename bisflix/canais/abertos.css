@@ -108,13 +108,14 @@ main {
 /* Estilos para os botões VOLTAR e PRÓXIMA */
 #voltarButton,
 #proximaButton {
-    position: absolute;
-    top: 0px; /* Espaço entre os botões e a barra de título */
-    width: 45%; /* Reduzi o tamanho dos botões */
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 50%;
     background-color: transparent;
     border: none;
     color: #fff;
-    font-size: 24px; /* Aumentei o tamanho do texto */
+    font-size: 20px;
     text-align: center;
     cursor: pointer;
     outline: none;
@@ -122,31 +123,41 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25px; /* Altura dos botões */
-    white-space: nowrap; /* Evita que o texto quebre para a próxima linha */
-    overflow: hidden; /* Esconde qualquer parte do texto que não caiba na caixa */
-    text-overflow: ellipsis; /* Adiciona reticências (...) quando o texto é muito longo */
+    transition: 0.2s;
 }
 
 #voltarButton {
     left: 0;
-    background-color: red; /* Cor vermelha para o botão VOLTAR */
+    background-color: #FC6E51; /* Cor vermelha para o botão VOLTAR */
 }
 
 #proximaButton {
     right: 0;
-    background-color: blue; /* Cor azul para o botão PRÓXIMA */
+    background-color: #3498db; /* Cor azul para o botão PRÓXIMA */
 }
 
-/* Ícones para os botões */
+/* Ícones */
 #voltarButton::before {
     content: "\2190"; /* Código da seta para a esquerda */
     font-family: 'bi'; /* Use a biblioteca de ícones desejada (bi no exemplo) */
     font-weight: 900;
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
 }
 
 #proximaButton::after {
     content: "\2192"; /* Código da seta para a direita */
     font-family: 'bi'; /* Use a biblioteca de ícones desejada (bi no exemplo) */
     font-weight: 900;
+    margin-left: 5px; /* Espaço entre o ícone e o texto */
 }
+
+/* Efeito de hover para os botões */
+#voltarButton:hover,
+#proximaButton:hover {
+    border: 3px outset #ddd;
+    color: #fff;
+    background: linear-gradient(160deg, #666, #444);
+    text-shadow: 0px 0px 4px #ccc;
+    box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+    transition-delay: 0s;
+    }
