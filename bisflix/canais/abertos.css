@@ -99,3 +99,48 @@ main {
     background-color: #201d3d6b;
     color: #b0a8ffff;
 }
+
+/* Estilos para os botões VOLTAR e PRÓXIMA */
+#voltarButton,
+#proximaButton {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#voltarButton {
+    left: 0;
+    background-color: red; /* Cor vermelha para o botão VOLTAR */
+}
+
+#proximaButton {
+    right: 0;
+    background-color: blue; /* Cor azul para o botão PRÓXIMA */
+}
+
+/* Ícones */
+#voltarButton::before {
+    content: "\2190"; /* Código da seta para a esquerda */
+    font-family: 'bi'; /* Use a biblioteca de ícones desejada (bi no exemplo) */
+    font-weight: 900;
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+}
+
+#proximaButton::after {
+    content: "\2192"; /* Código da seta para a direita */
+    font-family: 'bi'; /* Use a biblioteca de ícones desejada (bi no exemplo) */
+    font-weight: 900;
+    margin-left: 5px; /* Espaço entre o ícone e o texto */
+}
