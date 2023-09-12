@@ -82,10 +82,16 @@
             <h3>DISCOVERY WORLD HD</h3>
         </div>
         <!-- Nono poster -->
-        <div class="grid-item">                          <a href="http://joao-1-us.mainbkonline.shop:80/live/2878926985/0749027113/76679.m3u8"
+        <div class="grid-item">                          <a href="http://joao-1-us.mainbkonline.shop:80/live/2878926985/0749027113/46.m3u8"
             data-title="INVESTIGAÇAO-DISCOVERY-HD">
             <img src="https://i.ibb.co/S5DRd2X/logoband.png" alt="INVESTIGAÇAO DISCOVERY HD">
             <h3>INVESTIGAÇAO DISCOVERY HD</h3>
+        </div>
+        <!-- Décimo poster -->
+        <div class="grid-item">                          <a href="http://joao-1-us.mainbkonline.shop:80/live/2878926985/0749027113/83.m3u8"
+            data-title="TLC-HD">
+            <img src="https://imgur.com/S37uvno.png" alt="TLC HD">
+            <h3>TLC HD</h3>
         </div>
         <!-- Repita esta estrutura para quantos posteres desejar exibir -->
     </main>
