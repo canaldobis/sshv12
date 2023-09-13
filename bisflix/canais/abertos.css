@@ -55,7 +55,7 @@ main {
 /* Estilo para a grade (grid) */
 .PosterGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Alterado o minmax para 100px */
     gap: 10px;
     padding: 20px;
 }
@@ -175,4 +175,4 @@ main {
     text-shadow: 0px 0px 4px #ccc;
     box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
     transition-delay: 0s;
-    }
+}
