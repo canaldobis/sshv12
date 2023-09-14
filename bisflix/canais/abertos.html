@@ -112,8 +112,8 @@
 </main>
 <!-- Reprodutor de Vídeo -->
     <video id="video-player" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360">
-        <script src="https://vjs.zencdn.net/8.5.2/video.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.15.0/videojs-contrib-hls.min.js"></script>
+        <script src="video.core.min.js"></script>
+<script src="videojs-http-streaming.min.js"></script>
 <script>
     const videoLinks = document.querySelectorAll(".video-link");
     const videoPlayer = videojs("video-player", {
