@@ -111,32 +111,33 @@
     <!-- Repita esta estrutura para mais posteres -->
 </main>
 <script>
-    // Obtém todas as âncoras com a classe "video-link"
-    const videoLinks = document.querySelectorAll(".video-link");
+   // Obtém todas as âncoras com a classe "video-link"
+const videoLinks = document.querySelectorAll(".video-link");
 
-    // Define o tipo de vídeo, como "application/x-mpegURL" para HLS
-    const videoType = "application/x-mpegURL";
+// Adiciona um ouvinte de evento de clique a cada âncora
+videoLinks.forEach(function (videoLink) {
+    videoLink.addEventListener("click", function (event) {
+        // Impede o comportamento padrão do link (navegar para outra página)
+        event.preventDefault();
 
-    // Adiciona um ouvinte de evento de clique a cada âncora
-    videoLinks.forEach(function (videoLink) {
-        videoLink.addEventListener("click", function (event) {
-            // Impede o comportamento padrão do link (navegar para outra página)
-            event.preventDefault();
+        // Obtém o identificador único do vídeo associado a este link (data-title)
+        const identifier = videoLink.getAttribute("data-title");
 
-            // Obtém o identificador único do vídeo associado a este link (data-title)
-            const identifier = videoLink.getAttribute("data-title");
+        // Obtém a fonte do vídeo a partir do atributo "href" do link
+        const videoSource = videoLink.getAttribute("href");
 
-            // Obtém a fonte do vídeo a partir do atributo "href" do link
-            const videoSource = videoLink.getAttribute("href");
+        // Define o tipo de vídeo, como "application/x-mpegURL" para HLS
+        const videoType = "application/x-mpegURL";
 
-            // Substitua o vídeo no reprodutor de vídeo
-            const videoPlayer = videojs("video-player"); // Substitua "video-player" pelo ID correto do reprodutor
-            videoPlayer.src({ src: videoSource, type: videoType }); // Use um objeto para definir src e type
+        // Substitui o vídeo no reprodutor de vídeo
+        const videoPlayer = videojs("video-player"); // Substitua "video-player" pelo ID correto do reprodutor
+        videoPlayer.src(videoSource);
+        videoPlayer.type(videoType);
 
-            // Reproduz o vídeo
-            videoPlayer.play();
-        });
+        // Reproduz o vídeo
+        videoPlayer.play();
     });
+});
 </script>
 <p class="footer-text">AT.TE:<br>
     <b><a href="https://telegram.me/equipebis">⇲𝐄𝐐𝐔𝐈𝐏𝐄 𝐁𝐈𝐒⇱</a></b> &copy; 2015-2023 <b>CONECTANDO VOCÊ AO MUNDO! - Todos os direitos Reservados.</b>
@@ -144,4 +145,4 @@
 </footer>
 </body>
 
-        </html>
+            </html>
