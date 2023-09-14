@@ -123,33 +123,29 @@
             // Obtém o identificador único do vídeo associado a este link (data-title)
             const identifier = videoLink.getAttribute("data-title");
 
-            // Aqui você pode fazer algo com o identificador para carregar o vídeo correto
-            // no reprodutor de vídeo. Por exemplo, usando o Video.js:
-            const videoPlayer = videojs("video-player"); // Substitua "video-player" pelo ID correto do reprodutor
-            const videoSource = {
-                src: getVideoURLForIdentifier(identifier), // Implemente a função para obter a URL do vídeo com base no identificador
-                type: "application/x-mpegURL", // Defina o tipo correto do vídeo
-            };
-            videoPlayer.src(videoSource);
-            videoPlayer.play();
+            // Obtém o elemento de vídeo pelo ID baseado no identificador
+            const videoElement = document.getElementById(identifier);
 
-            // Exemplo de ação usando o identificador:
-            // alert("Abrir reprodutor de vídeo para: " + identifier);
+            // Obtém a fonte do vídeo a partir do atributo "src" do vídeo correspondente
+            const videoSource = videoElement.getAttribute("src");
+
+            // Define o tipo de vídeo, como "application/x-mpegURL" para HLS
+            const videoType = "application/x-mpegURL";
+
+            // Substitua o vídeo no reprodutor de vídeo
+            const videoPlayer = videojs("video-player"); // Substitua "video-player" pelo ID correto do reprodutor
+            videoPlayer.src(videoSource);
+            videoPlayer.type(videoType);
+
+            // Reproduz o vídeo
+            videoPlayer.play();
         });
     });
-
-    // Função para obter a URL do vídeo com base no identificador
-    function getVideoURLForIdentifier(identifier) {
-        // Implemente esta função para mapear o identificador para a URL do vídeo
-        // Por exemplo, você pode usar um objeto ou um switch-case para associar o identificador à URL correta.
-        // Retorne a URL do vídeo correspondente.
-    }
 </script>
-    <footer>
         <p class="footer-text">AT.TE:<br>
             <b><a href="https://telegram.me/equipebis">⇲𝐄𝐐𝐔𝐈𝐏𝐄 𝐁𝐈𝐒⇱</a></b> &copy; 2015-2023 <b>CONECTANDO VOCÊ AO MUNDO! - Todos os direitos Reservados.</b>
         </p>
     </footer>
 </body>
 
-            </html>
+    </html>
