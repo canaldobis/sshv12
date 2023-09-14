@@ -111,31 +111,36 @@
     <!-- Repita esta estrutura para mais posteres -->
 </main>
 <!-- Reprodutor de Vídeo -->
-    <video id="video-player" class="video-js" controls>
+    <video id="video-player" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360">
         <source src="" type="application/x-mpegURL">
     </video>
 
-    <!-- Script para controlar a reprodução -->
+    <!-- Scripts para controlar a reprodução -->
     <script src="https://vjs.zencdn.net/8.5.2/video.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.15.0/videojs-contrib-hls.min.js"></script>
+    <script src="videojs.hls.min.js"></script> <!-- Adicionado o script para HLS -->
     <script>
-        const videoLinks = document.querySelectorAll(".video-link");
-        const videoPlayer = videojs("video-player");
+        document.addEventListener("DOMContentLoaded", function () {
+            const videoLinks = document.querySelectorAll(".video-link");
+            const videoPlayer = videojs("video-player");
 
-        videoLinks.forEach(function (videoLink) {
-            videoLink.addEventListener("click", function (event) {
-                event.preventDefault();
-                const videoSource = videoLink.getAttribute("href");
-                videoPlayer.src(videoSource);
-                videoPlayer.play();
+            videoLinks.forEach(function (videoLink) {
+                videoLink.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const videoSource = videoLink.getAttribute("href");
+                    videoPlayer.src(videoSource);
+                    videoPlayer.play();
+                });
             });
         });
+
+        // Seu exemplo com video.js
+        var player = videojs('video-player');
+        player.play();
     </script>
-    <footer>
 <p class="footer-text">AT.TE:<br>
     <b><a href="https://telegram.me/equipebis">⇲𝐄𝐐𝐔𝐈𝐏𝐄 𝐁𝐈𝐒⇱</a></b> &copy; 2015-2023 <b>CONECTANDO VOCÊ AO MUNDO! - Todos os direitos Reservados.</b>
 </p>
 </footer>
 </body>
-
     </html>
