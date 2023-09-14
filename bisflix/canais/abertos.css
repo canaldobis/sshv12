@@ -95,7 +95,7 @@ main {
     position: absolute;
     bottom: 0;
     width: 100%;
-    font-size: 14px;
+    font-size: 9px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
