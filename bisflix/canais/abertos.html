@@ -111,26 +111,40 @@
         <!-- Repita esta estrutura para mais posteres -->
     </main>
     <script>
-        // Obtém todas as âncoras com a classe "video-link"
-        const videoLinks = document.querySelectorAll(".video-link");
+    // Obtém todas as âncoras com a classe "video-link"
+    const videoLinks = document.querySelectorAll(".video-link");
 
-        // Adiciona um ouvinte de evento de clique a cada âncora
-        videoLinks.forEach(function (videoLink) {
-            videoLink.addEventListener("click", function (event) {
-                // Impede o comportamento padrão do link (navegar para outra página)
-                event.preventDefault();
+    // Adiciona um ouvinte de evento de clique a cada âncora
+    videoLinks.forEach(function (videoLink) {
+        videoLink.addEventListener("click", function (event) {
+            // Impede o comportamento padrão do link (navegar para outra página)
+            event.preventDefault();
 
-                // Obtém o título do vídeo associado a este link
-                const dataTitle = videoLink.getAttribute("data-title");
+            // Obtém o identificador único do vídeo associado a este link (data-title)
+            const identifier = videoLink.getAttribute("data-title");
 
-                // Aqui você pode fazer algo com o título, como abrir o reprodutor de vídeo
-                // e carregar o vídeo correto com base no título.
+            // Aqui você pode fazer algo com o identificador para carregar o vídeo correto
+            // no reprodutor de vídeo. Por exemplo, usando o Video.js:
+            const videoPlayer = videojs("video-player"); // Substitua "video-player" pelo ID correto do reprodutor
+            const videoSource = {
+                src: getVideoURLForIdentifier(identifier), // Implemente a função para obter a URL do vídeo com base no identificador
+                type: "application/x-mpegURL", // Defina o tipo correto do vídeo
+            };
+            videoPlayer.src(videoSource);
+            videoPlayer.play();
 
-                // Exemplo de ação:
-                alert("Abrir reprodutor de vídeo para: " + dataTitle);
-            });
+            // Exemplo de ação usando o identificador:
+            // alert("Abrir reprodutor de vídeo para: " + identifier);
         });
-    </script>
+    });
+
+    // Função para obter a URL do vídeo com base no identificador
+    function getVideoURLForIdentifier(identifier) {
+        // Implemente esta função para mapear o identificador para a URL do vídeo
+        // Por exemplo, você pode usar um objeto ou um switch-case para associar o identificador à URL correta.
+        // Retorne a URL do vídeo correspondente.
+    }
+</script>
     <footer>
         <p class="footer-text">AT.TE:<br>
             <b><a href="https://telegram.me/equipebis">⇲𝐄𝐐𝐔𝐈𝐏𝐄 𝐁𝐈𝐒⇱</a></b> &copy; 2015-2023 <b>CONECTANDO VOCÊ AO MUNDO! - Todos os direitos Reservados.</b>
@@ -138,4 +152,4 @@
     </footer>
 </body>
 
-                    </html>
+            </html>
