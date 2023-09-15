@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EQUIPE BIS - CANAIS ABERTOS</title>
     <link rel="stylesheet" href="categorias.css">
-    <link href="//vjs.zencdn.net/8.3.0/video-js.min.css" rel="stylesheet">
-<script src="//vjs.zencdn.net/8.3.0/video.min.js"></script>
+    <link href="https://unpkg.com/video.js@8.3.0/dist/video-js.min.css" rel="stylesheet">
+<script src="https://unpkg.com/video.js@8.3.0/dist/video.min.js"></script>
+<link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -28,117 +28,140 @@
 
     <main class="PosterGrid">
         <!-- Lista de canais aqui -->
-        <!-- Primeiro poster -->
+<!-- Primeiro poster -->
         <div class="grid-item">
-            <a class="video-link" href="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3_4rGlFKkge-M9dI8q0tZEyHYJePKHvPd3zfyk0G7JoS/m3u8"
-                data-title="Rede-TV-HD">
-                <img src="https://i.ibb.co/1zpQJdh/7015-1071-import.png" alt="Rede TV HD">
-                <h3>Rede TV HD</h3>
-            </a>
+        <video id="Rede-TV-HD" class="video-js vjs-theme-fantasy" controls preload="auto" width="400" height="225" poster="https://i.ibb.co/1zpQJdh/7015-1071-import.png" data-setup="{}">
+         <source src="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3_4rGlFKkge-M9dI8q0tZEyHYJePKHvPd3zfyk0G7JoS/m3u8" type="video/mp4" />
+    <p class="vjs-no-js"> 
+     <h3>Rede TV HD</h3>
+    </p>
+  </video>
         </div>
-        <!-- Segundo poster -->
-        <div class="grid-item">
-            <a class="video-link" href="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3yI2Itf-tL5QL44ekko9dBHdTLanoACj1DA3-WRsTfGm/m3u8"
-                data-title="TV-Brasil-HD">
-                <img src="https://i.ibb.co/5Fd0g5y/Logotipo-da-TV-Brasil.png" alt="TV Brasil HD">
-                <h3>TV Brasil HD</h3>
-            </a>
-        </div>
-        <!-- Terceiro poster -->
-        <div class="grid-item">
-            <a class="video-link" href="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3_4rGlFKkge-M9dI8q0tZEzYfQwxgS24BiTMsr3G8w6B/m3u8"
-                data-title="TV-Cultura-HD">
-                <img src="https://i.ibb.co/RQ776BF/Tvcultura20055.png" alt="TV Cultura HD">
-                <h3>TV Cultura HD</h3>
-            </a>
-        </div>
-        <!-- Quarto poster -->
-        <div class="grid-item">
-            <a class="video-link" href="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3yI2Itf-tL5QL44ekko9dBH1lpF7ByszyRCfEBq3yI-J/m3u8"
-                data-title="TV-Escola-SD">
-                <img src="https://i.ibb.co/pwxh0qj/TV-Escola.png" alt="TV Escola SD">
-                <h3>TV Escola SD</h3>
-            </a>
-        </div>
-        <!-- Quinto poster -->
-        <div class="grid-item">
-            <a class="video-link" href="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3yI2Itf-tL5QL44ekko9dBGsdVx2SxbV8Gijk3Ay_fKj/m3u8"
-                data-title="TV-Senado-HD">
-                <img src="https://i.ibb.co/WpfVRX2/TV-Senado-0000000.png" alt="TV Senado HD">
-                <h3>TV Senado HD</h3>
-            </a>
-        </div>
-        <!-- Sexto poster -->
-    <div class="grid-item">
-        <a class="video-link" href="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3_4rGlFKkge-M9dI8q0tZEweR__xoaJ54RBnIUow6Z1g/m3u8"
-            data-title="SBT-SP-HD">
-            <img src="https://i.ibb.co/vwjFgFr/logosbt.png" alt="SBT SP HD">
+<!-- Segundo poster -->
+<div class="grid-item">
+    <video id="TV-Brasil-HD" class="video-js vjs-theme-fantasy" controls preload="auto" width="400" height="225" poster="https://i.ibb.co/5Fd0g5y/Logotipo-da-TV-Brasil.png" data-setup="{}">
+        <source src="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3yI2Itf-tL5QL44ekko9dBHdTLanoACj1DA3-WRsTfGm/m3u8" type="video/mp4" />
+        <p class="vjs-no-js">
+            <h3>TV Brasil HD</h3>
+        </p>
+    </video>
+</div>
+
+<!-- Terceiro poster -->
+<div class="grid-item">
+    <video id="TV-Cultura-HD" class="video-js vjs-theme-fantasy" controls preload="auto" width="400" height="225" poster="https://i.ibb.co/RQ776BF/Tvcultura20055.png" data-setup="{}">
+        <source src="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3_4rGlFKkge-M9dI8q0tZEzYfQwxgS24BiTMsr3G8w6B/m3u8" type="video/mp4" />
+        <p class="vjs-no-js">
+            <h3>TV Cultura HD</h3>
+        </p>
+    </video>
+</div>
+
+<!-- Quarto poster -->
+<div class="grid-item">
+    <video id="TV-Escola-SD" class="video-js vjs-theme-fantasy" controls preload="auto" width="400" height="225" poster="https://i.ibb.co/pwxh0qj/TV-Escola.png" data-setup="{}">
+        <source src="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3yI2Itf-tL5QL44ekko9dBH1lpF7ByszyRCfEBq3yI-J/m3u8" type="video/mp4" />
+        <p class="vjs-no-js">
+            <h3>TV Escola SD</h3>
+        </p>
+    </video>
+</div>
+
+<!-- Quinto poster -->
+<div class="grid-item">
+    <video id="TV-Senado-HD" class="video-js vjs-theme-fantasy" controls preload="auto" width="400" height="225" poster="https://i.ibb.co/WpfVRX2/TV-Senado-0000000.png" data-setup="{}">
+        <source src="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3yI2Itf-tL5QL44ekko9dBGsdVx2SxbV8Gijk3Ay_fKj/m3u8" type="video/mp4" />
+        <p class="vjs-no-js">
+            <h3>TV Senado HD</h3>
+        </p>
+    </video>
+</div>
+
+<!-- Sexto poster -->
+<div class="grid-item">
+    <video id="SBT-SP-HD" class="video-js vjs-theme-fantasy" controls preload="auto" width="400" height="225" poster="https://i.ibb.co/vwjFgFr/logosbt.png" data-setup="{}">
+        <source src="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3_4rGlFKkge-M9dI8q0tZEweR__xoaJ54RBnIUow6Z1g/m3u8" type="video/mp4" />
+        <p class="vjs-no-js">
             <h3>SBT SP HD</h3>
-        </a>
-    </div>
-    <!-- Sétimo poster -->
-    <div class="grid-item">
-        <a class="video-link" href="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3yI2Itf-tL5QL44ekko9dBEfKLCoJW6rVyzaYERTRjze/m3u8"
-            data-title="GLOBO-RJ-HD">
-            <img src="https://i.ibb.co/fQ0XM2G/logoglobo.png" alt="GLOBO RJ HD">
+        </p>
+    </video>
+</div>
+
+<!-- Sétimo poster -->
+<div class="grid-item">
+    <video id="GLOBO-RJ-HD" class="video-js vjs-theme-fantasy" controls preload="auto" width="400" height="225" poster="https://i.ibb.co/fQ0XM2G/logoglobo.png" data-setup="{}">
+        <source src="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3yI2Itf-tL5QL44ekko9dBEfKLCoJW6rVyzaYERTRjze/m3u8" type="video/mp4" />
+        <p class="vjs-no-js">
             <h3>GLOBO RJ HD</h3>
-        </a>
-    </div>
-    <!-- Oitavo poster -->
-    <div class="grid-item">
-        <a class="video-link" href="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3_4rGlFKkge-M9dI8q0tZEySli1WoErbGzFe91siYjie/m3u8"
-            data-title="Record-SP-HD">
-            <img src="https://i.ibb.co/xjpR5WW/logorecord.png" alt="Record SP HD">
+        </p>
+    </video>
+</div>
+
+<!-- Oitavo poster -->
+<div class="grid-item">
+    <video id="Record-SP-HD" class="video-js vjs-theme-fantasy" controls preload="auto" width="400" height="225" poster="https://i.ibb.co/xjpR5WW/logorecord.png" data-setup="{}">
+        <source src="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3_4rGlFKkge-M9dI8q0tZEySli1WoErbGzFe91siYjie/m3u8" type="video/mp4" />
+        <p class="vjs-no-js">
             <h3>Record SP HD</h3>
-        </a>
-    </div>
-    <!-- Nono poster -->
-    <div class="grid-item">
-        <a class="video-link"
-            href="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3_4rGlFKkge-M9dI8q0tZEyFRrppjNLumLXQRs9QBQrO/m3u8"
-            data-title="BAND-HD">
-            <img src="https://i.ibb.co/S5DRd2X/logoband.png" alt="BAND HD">
+        </p>
+    </video>
+</div>
+
+<!-- Nono poster -->
+<div class="grid-item">
+    <video id="BAND-HD" class="video-js vjs-theme-fantasy" controls preload="auto" width="400" height="225" poster="https://i.ibb.co/S5DRd2X/logoband.png" data-setup="{}">
+        <source src="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3_4rGlFKkge-M9dI8q0tZEyFRrppjNLumLXQRs9QBQrO/m3u8" type="video/mp4" />
+        <p class="vjs-no-js">
             <h3>BAND HD</h3>
-        </a>
-    </div>
-    <!-- Décimo poster -->
-    <div class="grid-item">
-        <a class="video-link" href="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3yI2Itf-tL5QL44ekko9dBGQpYrgMkeXA5qLZfw-89Vl/m3u8"
-            data-title="CANAL-RURAL">
-            <img src="https://imgur.com/RaIJoOf.png" alt="CANAL RURAL">
+        </p>
+    </video>
+</div>
+
+<!-- Décimo poster -->
+<div class="grid-item">
+    <video id="CANAL-RURAL" class="video-js vjs-theme-fantasy" controls preload="auto" width="400" height="225" poster="https://imgur.com/RaIJoOf.png" data-setup="{}">
+        <source src="http://cdn.contentgftp.xyz:80/play/U4O1YtwsADqidlo6hUuN3yI2Itf-tL5QL44ekko9dBGQpYrgMkeXA5qLZfw-89Vl/m3u8" type="video/mp4" />
+        <p class="vjs-no-js">
             <h3>CANAL RURAL</h3>
-        </a>
-    </div>
+        </p>
+    </video>
+</div>
     <!-- Repita esta estrutura para mais posteres -->
 </main>
 <!-- Reprodutor de Vídeo -->
-    <video id="video-player" class="video-js vjs-default-skin" controls preload="auto" width="400" height="225">
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-  const videoLinks = document.querySelectorAll(".video-link");
-  const videoPlayer = videojs("video-player", {
-    controls: true,
-    fluid: true, // Permite que o reprodutor se ajuste ao tamanho do contêiner
-  });
+<script src="//vjs.zencdn.net/8.3.0/video.min.js"></script>
+// Função para inicializar o reprodutor de vídeo
+function initializeVideoPlayer(videoId) {
+  var options = {}; // Opções do reprodutor, se necessário
+  var player = videojs(videoId, options, function onPlayerReady() {
+    videojs.log('Seu reprodutor está pronto!');
 
-  videoLinks.forEach(function (videoLink) {
-    videoLink.addEventListener("click", function (event) {
-      event.preventDefault();
-      const videoSource = videoLink.getAttribute("href");
-      videoPlayer.src({
-        src: videoSource,
-        type: "application/x-mpegURL", // Tipo do arquivo M3U8
-      });
-      videoPlayer.ready(function () {
-        this.play();
-      });
+    // Adicione qualquer lógica adicional aqui
+
+    // Exemplo de evento de reprodução completa
+    this.on('ended', function() {
+      videojs.log('Awww...terminou tão rápido?!');
     });
   });
-});
-    </script>
+}
+
+// Função para abrir o vídeo com base no ID
+function openVideoById(videoId) {
+  // Verifique se o vídeo está oculto e, em seguida, mostre-o
+  var videoElement = document.getElementById(videoId);
+  if (videoElement) {
+    videoElement.style.display = 'block'; // Mostrar o vídeo
+    initializeVideoPlayer(videoId); // Inicializar o reprodutor para o vídeo com o ID correspondente
+  }
+}
+
+// Exemplo de uso:
+// Abra o vídeo com base no ID (por exemplo, 'Rede-TV-HD')
+openVideoById('Rede-TV-HD');
+
 <p class="footer-text">AT.TE:<br>
     <b><a href="https://telegram.me/equipebis">⇲𝐄𝐐𝐔𝐈𝐏𝐄 𝐁𝐈𝐒⇱</a></b> &copy; 2015-2023 <b>CONECTANDO VOCÊ AO MUNDO! - Todos os direitos Reservados.</b>
 </p>
 </footer>
 </body>
-    </html>
+        </html>
